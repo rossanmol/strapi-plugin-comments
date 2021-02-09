@@ -30,5 +30,8 @@
     "popup.reports.empty": "All good, no issues reported",
     "notification.comment.visibility": "Comment visibility has been changed",
     "notification.thread.visibility": "Comment thread visibility has been changed",
-    "notification.abuse-report.resolution": "Abuse report has been resolved"
+    "notification.abuse-report.resolution": "Abuse report has been resolved",
+    "list.header.filters.message": "find {count} elements",
+    "list.header.filters.clearAll": "Clear all",
+    "list.header.filters.apply": "Apply"
 }
