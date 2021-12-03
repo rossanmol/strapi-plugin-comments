@@ -1,6 +1,6 @@
 {
-  "name": "strapi-plugin-comments",
-  "version": "1.0.4",
+  "name": "strapi-plugin-comments-modified",
+  "version": "2.0.3",
   "description": "Strapi - Comments plugin",
   "strapi": {
     "name": "Comments",
@@ -37,27 +37,14 @@
     "jest-styled-components": "^7.0.2",
     "codecov": "^3.7.2"
   },
-  "author": {
-    "name": "VirtusLab // Mateusz Ziarko",
-    "email": "mziarko@virtuslab.com",
-    "url": "https://virtuslab.com"
-  },
-  "maintainers": [
-    {
-      "name": "VirtusLab // Mateusz Ziarko",
-      "email": "mziarko@virtuslab.com",
-      "url": "https://virtuslab.com"
-    },
-    {
-      "name": "VirtusLab // Maksymilian Pamuła",
-      "email": "mpamula@virtuslab.com",
-      "url": "https://virtuslab.com"
-    }
-  ],
   "engines": {
     "node": ">=10.16.0",
     "npm": ">=6.0.0"
   },
-  "keywords": ["strapi", "plugin", "comments"],
+  "keywords": [
+    "strapi",
+    "plugin",
+    "comments"
+  ],
   "license": "MIT"
 }

@@ -86,6 +86,12 @@ module.exports = {
         return builtInContextEnabled ? !isNil(user.id) : true;
     },
 
+    isCorrectLength: content => {
+		const minLength = get(strapi.config, 'plugins.comments.minLength', 1);
+		const maxLength = get(strapi.config, 'plugins.comments.maxLength', 200);
+        return content.length >= minLength && content.length <= maxLength;
+    },
+
     resolveUserContextError: user => {
         if (user) {
             throw new PluginError(401, 'Not authenticated');

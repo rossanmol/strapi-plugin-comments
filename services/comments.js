@@ -8,6 +8,7 @@ const {
     extractMeta,
     buildNestedStructure,
     checkBadWords,
+    isCorrectLength,
     filterOurResolvedReports,
     convertContentTypeNameToSlug,
     isValidUserContext,
@@ -223,7 +224,7 @@ module.exports = {
             throw resolveUserContextError(user);
         }
 
-        if (checkBadWords(content) && singleRelationFulfilled) {
+        if (checkBadWords(content) && singleRelationFulfilled && isCorrectLength(content)) {
             const { pluginName, model } = extractMeta(strapi.plugins);
             const { authorId, authorEmail, authorName, authorUser, ...rest } = data;
             let authorData = {};
